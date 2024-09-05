@@ -1,0 +1,177 @@
+* {
+  transition: 0.2s;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+#root {
+  background: black;
+  box-sizing: border-box;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.gutter {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 15%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  justify-content: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0 auto;
+  width: 70%;
+}
+
+/* gutter */
+.square {
+  background-color: transparent;
+  box-shadow: 0 0 2px transparent;
+  height: 16px;
+  margin: 1px;
+  transition: 0.5s;
+  width: 16px;
+}
+
+.main-row {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 5px;
+}
+
+.row-top {
+  height: 40vh;
+}
+
+.row-bottom {
+  height: 30vh;
+}
+
+.card {
+  margin: 10px;
+  min-height: 50px;
+  padding: 25px;
+}
+
+.header .card {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.header .card h1 {
+  font-size: 2.5em;
+}
+
+.header .card select {
+  font-size: 1.5em;
+  text-align: center;
+  width: 250px;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+
+.project-list li {
+  font-size: 1.2em;
+  margin: 5px;
+}
+
+.project-list .selected {
+  font-weight: bold;
+}
+
+.project-img-underlay {
+  height: 100%;
+  width: 100%;
+}
+
+.project-img {
+  height: 100%;
+  width: 100%;
+}
+
+.project-details {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.project-details div {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-link {
+  border: black 1px solid;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 3px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.project-link:hover {
+  background: white !important;
+  color: black !important;
+}
+/* selected-project */
+.selected-project {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.selected-project h3 {
+  font-size: 1.5em;
+  margin: 2px;
+}
+
+.selected-project-left {
+  text-align: center;
+  width: 25%;
+}
+
+.selected-project-right {
+  height: 100%;
+  width: 70%;
+}
+
+.selected-project-right img {
+  height: 80%;
+  overflow: hidden;
+  width: 100%;
+}
